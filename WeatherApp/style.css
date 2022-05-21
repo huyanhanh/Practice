@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)),
+		url(./img/hot.png) no-repeat center/cover;
+}
+
+.weather {
+    width: 350px;
+    border-radius: 10px;
+    padding: 30px 20px;
+    background: rgb(54, 45, 45);
+    background: url(./img/hot.png) no-repeat center/cover;
+}
+
+.hot {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)),
+		url(./img/hot.png) no-repeat center/cover;
+}
+
+.hot .weather {
+    background: url(./img/hot.png) no-repeat center/cover;
+}
+
+.cold {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)),
+		url(./img/cold.png) no-repeat center/cover;
+}
+
+.cold .weather {
+    background: url(./img/cold.png) no-repeat center/cover;
+}
+
+.warm {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)),
+		url(./img/warm.jpg) no-repeat center/cover;
+}
+
+.warm .weather {
+    background: url(./img/warm.jpg) no-repeat center/cover;
+}
+
+.search {
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 0 15px 0 15px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.4);
+    transition: 0.4s;
+    font-size: 19px;
+}
+
+.search:focus {
+    border-radius: 15px 0 15px 0;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.content {
+    text-align: center;
+    color: #fff;
+    margin: 40px 0;
+    transition: 0.4s;
+}
+
+.capital {
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.time {
+    margin: 15px 0 20px 0;
+    font-size: 15px;
+}
+
+.temperature {
+    font-size: 65px;
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+    margin: 0 30px;
+    padding: 10px 0;
+}
+
+.short-desc {
+    font-size: 40px;
+    font-weight: 500;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+    margin: 30px 0;
+}
+
+.more-desc div {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.more-desc {
+    display: flex;
+    justify-content: space-around;
+}
+
+.more-desc div i { 
+    margin: 10px 0;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+}
